@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <title>Wisielec</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="author" content="Dawid Skóra"/>
+    <meta name="keywords" content="wisielec, szubienica, gra, gra on-line, słowa, zgadywanie, zabawa, punkty, emocje"/>
+    <meta name="description" content="Gra w wisielca zapewnia ogromną ilość dobrej zabawy na całe godziny! Czy uda Ci się odgadnąć wszystkie hasła?"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/fontello.css" rel="stylesheet" type="text/css"/>
+    <script src="hangman.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+    <div id="container">
+        <div id="topboard">
+            <div id="points" style="float: left;">Punkty: 0/0</div>
+            <div class="space"> | </div>
+            <div id="timer" style="float: left;"><i class="icon-clock" title="Pozostały czas"></i> --s</div>
+            <div class="space"> | </div>
+            <div id="timerStatus">Czas: wyłączony</div>
+            <div style="clear: both;"></div>
+        </div>
+        <div id="board"></div>
+        <div id="gallows">
+            <img src="img/s0.jpg"/>
+        </div>
+        <div id="alphabet"></div>
+        <div style="clear: both;"></div>
+        <ul class="options">
+            <li id="sound" onclick="soundStatus()" title="włącz/wyłącz dźwięk"><i class="icon-volume-down"></i></li>
+            <li id="reload"><i class="icon-cw" onclick="reloadGame()" title="zmień hasło"></i></li>
+            <li id="clock"><i class="icon-clock" onclick="changeClockStatus()" title="włącz/wyłącz czas"></i></li>
+            <li id="reload"><i class="icon-menu" onclick="chosePasswordCategory()" title="zmień kategorię"></i></li>
+        </ul>
+    </div>
+
+</body>
+</html>

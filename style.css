@@ -1,0 +1,127 @@
+body
+{
+    background-color: #000000;
+    color: #bbbbbb;
+    user-select: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+}
+
+#container
+{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#topboard
+{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 500px;
+    /*border: 1px solid #ffffff;*/
+    font-size: 20px;
+    text-align: center;
+}
+
+.space
+{
+    float: left;
+    padding: 0 30px;
+}
+
+#board
+{
+    width: 900px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 48px;
+    min-height: 48px;
+}
+
+#gallows
+{
+    width: 50%;
+    float: left;
+    min-height: 280px;
+}   
+
+#alphabet
+{
+    width: 50%;
+    float: left;
+    min-height: 280px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.letter
+{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border: 3px solid #bbbbbb;
+    float: left;
+    cursor: pointer;
+    font-size: 30px;
+    border-radius: 15px;
+}
+
+.letter:hover
+{
+    background-color: #222222;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+
+.reset
+{
+    color: green;
+    cursor: pointer;
+    font-size: 48px;
+}
+
+.reset:hover
+{
+    color: white;
+}
+
+ul.category
+{
+    list-style-type: none;
+}
+
+ul.category:hover
+{
+    cursor: pointer;
+    
+}
+
+ul.category > li:hover
+{
+    color: #ffffff;
+}
+
+ul.options
+{
+    padding-top: 30px;
+    text-align: center;
+    list-style-type: none;
+}
+
+ul.options > li
+{
+    display: inline;
+    padding-top: 0;
+    cursor: pointer;
+}
+
+ul.options > li:hover
+{
+    color: #ffffff;
+}
